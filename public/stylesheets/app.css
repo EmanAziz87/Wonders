@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#cluster-map {
+  width: 100vw;
+  height: 400px;
+  position: relative;
+  left: 0;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+}
+
+.showpage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.show-carousel-container {
+  width: 400px;
+  height: 400px;
+}
+
+.show-container {
+  display: flex;
+}
+
+.show-attraction-container {
+  width: 100%;
+  max-height: 400px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showpage-container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 100%;
+}
+
+.showpage-title-container {
+  text-align: center;
+  background-color: rgb(248, 248, 248);
+}
+
+.show-item {
+  display: block;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.review-container {
+  margin-top: 32px;
+}
+
+.star-rating-container {
+  display: flex;
+  justify-content: center;
+}
+
+.starability-basic {
+  display: flex;
+}
+
+.review-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.review-text-area {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  margin-bottom: 12px;
+}
+
+.review-submit-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.show-description {
+  height: 40%;
+  overflow-y: scroll;
+}
+
+.show-item-footer {
+  height: 20px;
+  border: 1px solid black;
+}
+
+.show-card-text {
+  overflow-y: scroll;
+}
+
+.show-card-text-container {
+  height: 200px;
+  display: flex;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-subtitle {
+  text-align: center;
+}
+
+.edit-delete-container {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.post-button {
+  width: 100px;
+}
+
+.card-body-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container-index {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.map-popup {
+  text-align: center;
+}

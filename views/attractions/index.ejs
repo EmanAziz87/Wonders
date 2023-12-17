@@ -1,0 +1,36 @@
+<% layout('../layouts/boilerplate')%>
+<div id="cluster-map" class="shadow-sm"></div>
+<div class="container card-container-index">
+  <% for (let attraction of attractions) {%>
+  <div class="card" style="width: 18rem">
+    <%for (let img of uniqueImages) {%> <%if (img.attractionId == attraction.id)
+    {%>
+    <img
+      src="<%=img.path%>"
+      class="card-img-top"
+      style="height: 250px; width: 100%"
+      alt="..."
+    />
+    <%}%> <%}%>
+    <div class="card-body card-body-index shadow">
+      <h5 class="card-title"><%=attraction.title%></h5>
+      <p class="card-text text-muted"><%=attraction.location%></p>
+      <p class="card-text">
+        <%=attraction.description.split(" ").slice(0, 20).join(" ")%>...
+      </p>
+      <a
+        href="/attractions/<%=attraction.id%>"
+        class="btn btn-primary"
+        style="width: 100px"
+        >View</a
+      >
+    </div>
+  </div>
+  <% }%>
+</div>
+
+<script>
+  const mapToken = "<%-process.env.MAPBOX_TOKEN%>";
+  const allAttractions = <%-JSON.stringify(attractions)%>;
+</script>
+<script src="/javascript/clusterMap.js"></script>
